@@ -24,3 +24,12 @@ function startTimer(){
     }
     timer = setInterval(stopWatch,1000);
 }
+function stopTimer(){
+    clearInterval(timer)
+}
+function resetTimer() {
+    clearInterval(timer);
+    [hours, minutes, seconds] = [0, 0, 0];
+    timeWt.innerHTML = '00:00:00';
+  }
+  
